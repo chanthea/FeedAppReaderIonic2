@@ -1,0 +1,13 @@
+
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>Detail Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="detail" *ngIf="feedDetail">
+  <img src="http://textkhmer.com/img/newsimage/{{feedDetail[0].SubImg}}">
+  <h3>{{feedDetail[0].SubTitle}}</h3>
+  <p [innerHTML]="feedDetail[0].SubContent"></p>
+</ion-content>
